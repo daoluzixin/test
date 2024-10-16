@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var flag = confirm("您确定删除吗?");
+     alert(flag);
+     var i = 0;
+    //周期性的执行某个函数
+     setInterval(function(){
+        i++;
+        console.log("定时器执行了"+i+"次");
+     },2000)  //ms毫秒
+    
+     //定时器
+     setTimeout(function(){
+        alert("JS");
+     }, 3000)  
+
+     alert(location.href);
+     location.href = "https://www.icourse163.org/spoc/learn/UESTC-1460761163?tid=1473238510#/learn/content?type=detail&id=1260749718&cid=1297458250&replay=true";  //跳转到指定页面
+    </script>
+</body>
+</html>

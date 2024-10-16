@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 字符集为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 设置浏览器兼容性 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点访谈：城与乡的“双向奔赴”
+    </title>
+    <!-- 方式二:内嵌 -->
+      <style>
+        h1{
+            /*color: red;*/
+            color: rgb(43, 0, 123.509)
+            /* color: #00f     识色器 */
+        }
+        /* 颜色表示方法
+        关键字
+        rgb表示法:红黄蓝三原色
+        16进制表示法: #开头 */
+        /*元素选择器*/
+        span{
+            color: rgb(43, 0, 129) 
+        }
+
+        /*类选择器*/
+        /* .cls{
+            color: rgb(42.12.213)
+        } */
+
+        /* ID选择器 */
+        #time{
+            color: rgb(12, 123, 214);
+            font-size: 13px; /*设置字体大小  注意加px*/
+        }
+        a{
+            color: black;
+            text-decoration: none;  /*设置为一个标准的文本*/
+        }
+        p{
+            text-indent: 50px ; /*设置首行缩进*/
+            line-height: 25px;
+        }
+        #last{
+            text-align: right;  /*靠右对齐*/
+        }
+        #center{
+            width: 80%;
+           /* margin: 0% 17.5% 0% 17.5%;  上 右 下 左*/
+           margin: 0 auto;  /* 上下  左右*/
+        }
+        #pict{
+            width: 30%;
+            height: auto;
+        }
+     </style> 
+
+      <!-- 方式三:外联方式 -->
+      <!-- <link rel="stylesheet" href="C:\Users\冯\Desktop\编程学习\JavaWeb\HTML\news.css"> --> 
+</head>
+<body>
+    <div id="center">
+    <!-- img标签:
+        src: 图片资源路径
+        width:宽度 (px, 像素; %, 相对于父元素的百分比)
+        height:高度 (px, 像素; %, 相对于父元素的百分比)
+
+    路径书写方式:
+        绝对路径:磁盘路径  网络路径 https://img.gmw.cn/pic/channelogo/politics.gif
+        相对路径: ./:当前目录   可以省略 
+                 ../: 上一级目录-->
+    <img id="pict" src="https://img1.baidu.com/it/u=1640867534,535326340&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" ><a href="https://politics.gmw.cn/" target="_blank">新浪政务</a> > 正文
+    <!-- <h1 style='color: red'>
+        焦点访谈：城与乡的“双向奔赴”
+    </h1> -->
+    <h1>
+        焦点访谈：城与乡的“双向奔赴”
+    </h1>
+    <!-- /* hr 分割线 */ -->
+    <hr>
+    <!-- b, strong 加粗 -->
+    <b>来源：央视网</b>  <span class="cls"  id="time">2024-09-27 08:38</span>  
+    <hr>
+
+    <!-- 正文 -->
+    <!-- 视频 -->
+     <video src="C:\Users\冯\Desktop\1390894381\1390894381-1-100047.m4s" controls  width="350px"></video>
+
+    <!-- 音频 -->
+     <audio src="C:\Users\冯\Desktop\1390894381\1390894381-1-100047.m4s" controls></audio>
+    <p>
+        央视网消息（焦点访谈）：“城镇化是现代化的必由之路”。2012年，我国常住人口城镇化率53%，2023年提高至66%，城镇常住人口达到9.33亿，城镇化水平和质量大幅提升。目前，我国城镇化发展的潜力仍然很大。党的二十届三中全会提出“健全推进新型城镇化体制机制。构建产业升级、人口集聚、城镇发展良性互动机制。
+        　　现代的城镇化进程背后有大量的调研、规划和统筹工作。改革的顶层设计要求把这些工作做在前面，进城的道路才能畅通，进城的人才会安心过渡。如何让城市既能留住人，更能留住心。今天（9月26日），请您走进江苏宿迁，看看他们由农民变成市民，在大政策下的小日子。
+        
+    </p>
+    <img src="https://imgpolitics.gmw.cn/attachement/png/site2/20240927/f44d305ea48e286043f814.png">
+   <p>
+    王子墨的老家在江苏省宿迁市的一个小乡村，他在宿迁市区的一个建筑工地上做安全员。在城市就业、安居，带着全家进城生活，是王子墨一直以来的梦想。得益于国家持续放开放宽城镇落户条件，今年八月，他将户口迁到了宿迁市区，孩子也一并落了户。
+   </p>
+   <p id="last">
+    [ 责编：冯云浩 ]
+   </p>
+   <form action="1" method="get">
+    阅读人 用户名: <input type="text" name="username">
+    年龄: <input type="text" name="age">
+    <input type="button" value="提交">
+    </form>
+</div>
+</body>
+</html>

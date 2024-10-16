@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="h1" src="C:\Users\冯\Desktop\凌睿(图片勿移)\题目二运行结果.png" ><br><br>
+
+    <div class="cls">黑马程序员</div> <br>
+    <div class="cls">黑马程序员213</div> <br>
+
+
+    <input type="checkbox" name="hobby">电影
+    <input type="checkbox" name="hobby">旅游
+    <input type="checkbox" name="hobby">游戏
+</body>
+<script>
+    var i = 0;
+
+    //1.获取Element元素
+    //1.1 获取元素,根据ID获取
+    var img = document.getElementById('h1');
+    alert(img);
+
+    //1.2 根据标签获取
+    var divs = document.getElementsByTagName('div');
+    for(let index = 0; i < divs.length; i++){
+        alert(divs[i]);
+    }
+
+    //1.3 根据name属性获取
+    var ins = document.getElementsByName('hobby');
+    for(let i = 0; i<ins.length; i++){
+        alert(ins[i]);
+    }
+
+    //1.4 根据class属性获取
+    var divs = document.getElementsByClassName('cls');
+    for (let i = 0; i < divs.length; i++){
+        alert(divs[i])
+    }
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS入门
+    </title>
+    <!-- 内部脚本 -->
+    <script>
+        //弹出警告框
+        alert('Hello JS');
+
+        //写入HTML页面中
+        document.write("Hello js");
+
+        //控制台输出
+        console.log('hello js');
+    </script> 
+
+     <!-- 外部脚本 -->
+       <!-- <script src="路径"></script> -->
+</head> 
+<body>
+    <script >
+        alert("JS");
+
+        //作用域大,全局变量
+        //可以重复定义, 由上到下执行
+        //let 局部变量,不能重复定义
+        //const  常量,不能被改变
+        var a = '冯云浩';
+        alert(a);
+        //定义一
+        function add(a, b){
+            return a+b;
+        }
+        //定义二
+        var add = function(a, b){
+            return a+b;
+        }
+
+        var result = add(10, 20);
+        alert(result);
+
+        var arr = [1,2,34,4];
+        console.log(arr[2]);
+        
+        arr.forEach(function(e){
+            console.log(e);
+        })
+    </script>
+</body>
+</html>
